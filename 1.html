@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tham gia Câu lạc bộ</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>📝 Phiếu đăng ký </h1>
+            <p>Năm học 2025 - 2026 | Trường THPT Xuân Giang</p>
+        </div>
+        <form action="https://mah220200.github.io/t/" method="POST">
+            <!-- Thông tin học sinh -->
+            <div class="section">
+                <div class="section-title">👤 Thông tin </div>
+                
+                <div class="form-group">
+                    <label for="hoten">Họ và tên <span>*</span></label>
+                    <input type="text" id="hoten" name="hoten" placeholder="Nhập họ và tên đầy đủ" required>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="ngaysinh">Ngày sinh <span>*</span></label>
+                        <input type="date" id="ngaysinh" name="ngaysinh" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Giới tính <span>*</span></label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gioitinh" value="nam" required> Nam</label>
+                            <label><input type="radio" name="gioitinh" value="nu"> Nữ</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="lop">Lớp <span>*</span></label>
+                        <select id="lop" name="lop" required>
+                            <option value="">-- Chọn lớp --</option>
+                            <option value="10A1">10A1</option>
+                            <option value="10A2">10A2</option>
+                            <option value="10D1">10D1</option>
+                            <option value="10D2">10D2</option>
+                            <option value="11A1">11A1</option>
+                            <option value="11A2">11A2</option>
+                            <option value="11D1">11D1</option>
+                            <option value="11D2">11D2</option>
+                            <option value="12D1">12D1</option>
+                            <option value="12D2">12D2</option>
+                            <option value="12A1">12A1</option>
+                            <option value="12A2">12A2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sdt">Số điện thoại</label>
+                        <input type="tel" id="sdt" name="sdt" placeholder="Nhập số điện thoại">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email">
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">🏆 Đăng ký </div>
+
+                <div class="form-group">
+                    <label>Chọn Câu lạc bộ muốn tham gia <span>*</span></label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="radio" name="clb" value="tinhoc">
+                            <span>💻 CLB Tin học</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nangkhieu">Năng khiếu / Kinh nghiệm (nếu có)</label>
+                    <textarea id="nangkhieu" name="nangkhieu" placeholder="Kể về năng khiếu hoặc kinh nghiệm của bạn với CLB đã chọn..."></textarea>
+                </div>
+            <div class="section">
+                <div class="section-title">✍️ Cam kết</div>
+                <div class="commitment">
+                    <label>
+                        <input type="checkbox" name="dongy" required>
+                        <span>Tôi xin cam kết tham gia đầy đủ các hoạt động của Câu lạc bộ, chấp hành tốt nội quy và quy định của nhà trường. Tôi đồng ý cho con tham gia và chịu trách nhiệm về an toàn trong giờ hoạt động.</span>
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">📨 Gửi đăng ký</button>
+        </form>
+        <div class="footer">
+            <p>© 2026 - Phiếu đăng ký Câu lạc bộ | Trường THPT Xuân Giang</p>
+        </div>
+    </div>
+
+</body>
+</html>
